@@ -17,10 +17,10 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.feather</groupId>
-            <artifactId>lagou-service-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.feather</groupId>-->
+<!--            <artifactId>lagou-service-common</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

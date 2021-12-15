@@ -4,11 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba452809-3169-4def-91c7-4d28a2f63b50" name="Changes" comment="" />
+    <list default="true" id="ba452809-3169-4def-91c7-4d28a2f63b50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/java/org/feather/AutoDeliverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/java/org/feather/controller/AutoDeliverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-common/src/main/java/org/feather/pojo/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/ResumeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/controller/ResumeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/dao/ResumeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/service/Impl/ResumeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/service/ResumeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-service-autodeliver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-service-autodeliver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-service-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-service-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -19,6 +44,7 @@
     </option>
   </component>
   <component name="ProjectId" id="22HOqPsGchcmBOn7h60dqtB0Ij9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,7 +53,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.AutoDeliverApplication">
+    <configuration name="AutoDeliverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-autodeliver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.feather.AutoDeliverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-resume" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.feather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.feather.ResumeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ResumeApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -40,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639491238512</updated>
-      <workItem from="1639491240096" duration="896000" />
+      <workItem from="1639491240096" duration="5267000" />
     </task>
     <servers />
   </component>
