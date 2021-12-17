@@ -1,6 +1,6 @@
 #Eureka server服务端⼝
 server:
-  port: 8761
+  port: 8762
 spring:
   application:
    name: lagou-cloud-eureka-server # 应⽤名称，会在Eureka中作为服务的id标识（serviceId）

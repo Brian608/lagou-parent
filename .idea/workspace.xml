@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba452809-3169-4def-91c7-4d28a2f63b50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/java/org/feather/AutoDeliverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/java/org/feather/controller/AutoDeliverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-autodeliver/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-common/src/main/java/org/feather/pojo/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/ResumeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/controller/ResumeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/dao/ResumeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/service/Impl/ResumeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/java/org/feather/service/ResumeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lagou-service-resume/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-service-autodeliver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-service-autodeliver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lagou-service-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-service-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/src/main/java/org/feather/LagouEurekaServerApplication8761.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8762/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8762/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/src/main/java/org/feather/LagouEurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8762/src/main/java/org/feather/LagouEurekaServerApplication8762.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lagou-cloud-eureka-server-8761/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,18 +44,37 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lagou-cloud-eureka-server-8762/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AutoDeliverApplication">
+  <component name="RunManager" selected="Spring Boot.LagouEurekaServerApplication8761">
     <configuration name="AutoDeliverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="lagou-service-autodeliver" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.feather.AutoDeliverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouEurekaServerApplication8761" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-eureka-server-8761" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.feather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.feather.LagouEurekaServerApplication8761" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LagouEurekaServerApplication8761" />
         <item itemvalue="Spring Boot.ResumeApplication" />
       </list>
     </recent_temporary>
@@ -96,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639491238512</updated>
-      <workItem from="1639491240096" duration="5267000" />
+      <workItem from="1639491240096" duration="8454000" />
     </task>
     <servers />
   </component>

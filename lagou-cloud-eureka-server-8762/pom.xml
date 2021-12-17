@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lagou-cloud-eureka-server-8761</artifactId>
+    <artifactId>lagou-cloud-eureka-server-8762</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
