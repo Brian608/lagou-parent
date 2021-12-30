@@ -6,9 +6,10 @@ spring:
    name: lagou-cloud-eureka-server # 应⽤名称，会在Eureka中作为服务的id标识（serviceId）
 eureka:
   instance:
-   hostname: localhost
+   hostname: LagouCloudEurekaServerA
   client:
    service-url: # 客户端与EurekaServer交互的地址，如果是集群，也需要写其它Server的地址
-    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-   register-with-eureka: false # ⾃⼰就是服务不需要注册⾃⼰
-   fetch-registry: false #⾃⼰就是服务不需要从Eureka Server获取服务信息,默认为true，置为false
+     #集群模式下，defaultZone应该指向其他Eureka Server，如果有更多其他server实力，用，分割
+     defaultZone: http://LagouCloudEurekaServerB:8762/eureka
+   register-with-eureka: true # ⾃⼰就是服务不需要注册⾃⼰  集群模式下改成true
+   fetch-registry: true #⾃⼰就是服务不需要从Eureka Server获取服务信息,默认为true，置为false
