@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.jwt.crypto.sign.MacSigner;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -13,6 +14,8 @@ import org.springframework.security.oauth2.provider.token.AuthorizationServerTok
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 /**
  * @program: lagou-parent
@@ -26,6 +29,8 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 public class OauthServerConfiger extends AuthorizationServerConfigurerAdapter {
    @Autowired
    private AuthenticationManager authenticationManager;
+
+    private String sign_key = "lagou123"; // jwt签名密钥
 
     /**
      * 认证服务器最终是以api接⼝的⽅式对外提供服务（校验合法性并⽣成令牌、校验令牌等）
@@ -96,15 +101,28 @@ public class OauthServerConfiger extends AuthorizationServerConfigurerAdapter {
     该⽅法⽤于创建tokenStore对象（令牌存储对象）
     token以什么形式存储
     */
-    public TokenStore tokenStore() {
-        return new InMemoryTokenStore();
+    public TokenStore tokenStore(){
+//return new InMemoryTokenStore();
+// 使⽤jwt令牌
+        return new JwtTokenStore(jwtAccessTokenConverter());
+    }
+    /**
+     * 返回jwt令牌转换器（帮助我们⽣成jwt令牌的）
+     * 在这⾥，我们可以把签名密钥传递进去给转换器对象
+     * @return
+     */
+    public JwtAccessTokenConverter jwtAccessTokenConverter() {
+        JwtAccessTokenConverter jwtAccessTokenConverter = new
+                JwtAccessTokenConverter();
+        jwtAccessTokenConverter.setSigningKey(sign_key); // 签名密钥
+        jwtAccessTokenConverter.setVerifier(new MacSigner(sign_key)); // 验证时使⽤的密钥，和签名密钥保持⼀致
+        return jwtAccessTokenConverter;
     }
 
     /**
      * 该⽅法⽤户获取⼀个token服务对象（该对象描述了token有效期等信息）
      */
-    public AuthorizationServerTokenServices
-    authorizationServerTokenServices() {
+    public AuthorizationServerTokenServices authorizationServerTokenServices() {
 // 使⽤默认实现
         DefaultTokenServices defaultTokenServices = new
                 DefaultTokenServices();
